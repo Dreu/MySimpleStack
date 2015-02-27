@@ -5,83 +5,33 @@ import junit.framework.TestCase;
 public class MySimpleStackTest extends TestCase {
 
     public void testIsEmpty() throws Exception {
-        /*
-        * Given
-        * */
+
+        // Given
+
         MySimpleStack mystack = new MySimpleStack();
-        /*
-        * When
-        * */
+
+       //When
 
 
-        /*
-        * Then
-        * */
-        assertEquals(mystack.isEmpty(),true);
+       //Then
+        assertTrue(mystack.isEmpty());
+        assertEquals(mystack.getSize(),0);
 
      }
 
     public void testGetSize() throws Exception {
-         /*
-        * Given
-        * */
 
-
-        /*
-        * When
-        * */
-
-
-        /*
-        * Then
-        * */
     }
 
     public void testPush() throws Exception {
-         /*
-        * Given
-        * */
 
-
-        /*
-        * When
-        * */
-
-
-        /*
-        * Then
-        * */
     }
 
     public void testPeek() throws Exception {
-         /*
-        * Given
-        * */
 
-
-        /*
-        * When
-        * */
-
-
-        /*
-        * Then
-        * */
     }
 
     public void testPop() throws Exception {
-         /*
-        * Given
-        * */
 
-
-        /*
-        * When
-        * */
-
-
-        /*
-        * Then
-        * */
     }
 }
