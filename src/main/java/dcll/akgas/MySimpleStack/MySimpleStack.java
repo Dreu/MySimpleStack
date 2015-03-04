@@ -7,6 +7,8 @@ import java.util.LinkedList;
 
 /**
  * Created by gassama on 09/02/15.
+ *
+ * Un commentaire répondant à l'exigence #3
  */
 public class MySimpleStack implements SimpleStack {
 
