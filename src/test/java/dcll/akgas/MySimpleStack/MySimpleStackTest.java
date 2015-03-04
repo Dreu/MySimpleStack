@@ -12,7 +12,6 @@ public class MySimpleStackTest extends TestCase {
 
        //When
 
-
        //Then
         assertTrue(mystack.isEmpty());
         assertEquals(mystack.getSize(),0);
@@ -21,6 +20,13 @@ public class MySimpleStackTest extends TestCase {
 
     public void testGetSize() throws Exception {
 
+        //Given
+        MySimpleStack mystack = new MySimpleStack();
+        Item it = new Item();
+        // when
+        mystack.push(it);
+        // then
+        assertEquals(mystack.getSize(),1);
     }
 
     public void testPush() throws Exception {
