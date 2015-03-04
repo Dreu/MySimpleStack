@@ -3,36 +3,45 @@ package dcll.akgas.MySimpleStack;
 import interfaces.SimpleStack;
 
 import java.util.EmptyStackException;
+import java.util.LinkedList;
 
 /**
  * Created by gassama on 09/02/15.
  */
 public class MySimpleStack implements SimpleStack {
+
+    private LinkedList<Item> list = new LinkedList<Item>();
     @Override
     public boolean isEmpty() {
-        if(this.getSize()==0){
+
+        if(list.size()==0){
             return true;
         }
-        return false;
+        else{return false;}
     }
 
     @Override
     public int getSize() {
-        return 0;
+        return list.size();
     }
 
     @Override
     public void push(Item item) {
-
+        list.push(item);
     }
 
     @Override
     public Item peek() throws EmptyStackException {
-        return null;
+
+        Item it = list.peek();
+        return it;
     }
 
     @Override
     public Item pop() throws EmptyStackException {
-        return null;
+
+        Item it = list.pop();
+
+        return it;
     }
 }
