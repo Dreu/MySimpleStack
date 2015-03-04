@@ -32,7 +32,6 @@ public class MySimpleStack implements SimpleStack {
 
     @Override
     public Item peek() throws EmptyStackException {
-
         Item it = list.peek();
         return it;
     }
