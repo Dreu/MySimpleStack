@@ -30,14 +30,37 @@ public class MySimpleStackTest extends TestCase {
     }
 
     public void testPush() throws Exception {
-
+        // Setup the "state of the world"
+        MySimpleStack stack = new MySimpleStack();
+        Item item = new Item();
+        // Code under test
+        stack.push(item);
+        // assertions (oracle)
+        assertEquals("The stack constains 1 item", 1, stack.getSize());
+        assertSame("The pushed item is on top of the stack", item,
+                stack.peek());
     }
 
     public void testPeek() throws Exception {
+        MySimpleStack stack = new MySimpleStack();
+        Item item = new Item();
+        // Code under test
+        stack.push(item);
+
+        // assertions
+       assertSame("The pushed item is on top of the stack", item,
+                stack.peek());
 
     }
 
     public void testPop() throws Exception {
+        MySimpleStack stack = new MySimpleStack();
+        Item item = new Item();
+        // Code under test
+        stack.push(item);
 
+        // assertions
+        assertSame("The pushed item is on top of the stack", item,
+                stack.pop());
     }
 }
